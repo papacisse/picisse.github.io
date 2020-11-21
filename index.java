@@ -43,6 +43,7 @@ var templateText=document.getElementById('tableTemplate').innerHTML;
 var compiledTemplateText=handlebars.compile(templateText);
 compileHtml=compiledTemplateText({rows: major_items})
 document.getElementById('menuTable').innerHTML=compileHtml;
+
 }
 else{document.getElementById('#menuTable').innerHTML=" There was an error"}
 }
