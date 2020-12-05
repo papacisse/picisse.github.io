@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"> <meta charset="utf-8">
+<head> </head> <title> conversion temperature </Title>
+
+<script type="text/javascript">
+function showTable()
+{var div1=document.getElementById("display");
+var  divData= " <h3> Temperature Celsius	Temperature Fahrenheit</h3> ";
+divData += "<table>";
+divData += " <p><tr><th> Temperature Celsius </th><th> Temperature Fahrenheit</th></tr></P> ";
+var i;
+var sum=0;
+var tempFar;
+for(i=0;i<=100;i=i+10){
+	sum=0+i;
+tempFar=(sum*9/5 )+ 32;
+divData += "<tr><td>" + sum + "</td><td>" + tempFar + " </td></tr>";
+}
+divData += "</table>";
+div1.innerHTML = divData;
+} 
+</Script>
+<body>
+<form >
+
+<p> <input type="button" value="click for table" onclick ="showTable()"> </P>
+
+ </form>
+ <div1 id="display"> </div>
+ </body></html>
